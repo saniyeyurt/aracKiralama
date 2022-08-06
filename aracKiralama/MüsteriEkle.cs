@@ -19,6 +19,7 @@ namespace aracKiralama
 
         private void MüsteriEkle_Load(object sender, EventArgs e)
         {
+            MessageBox.Show("merhaba dünya");
 
         }
     }
