@@ -47,6 +47,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="aracKiralama.cs" />
+    <Compile Include="frmMüsteriListeleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMüsteriListeleme.Designer.cs">
+      <DependentUpon>frmMüsteriListeleme.cs</DependentUpon>
+    </Compile>
     <Compile Include="HomePage.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +67,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmMüsteriListeleme.resx">
+      <DependentUpon>frmMüsteriListeleme.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="HomePage.resx">
       <DependentUpon>HomePage.cs</DependentUpon>
     </EmbeddedResource>
