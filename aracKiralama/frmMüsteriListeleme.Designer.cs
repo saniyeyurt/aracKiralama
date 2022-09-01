@@ -42,6 +42,8 @@
             this.txtAdsoyad = new System.Windows.Forms.MaskedTextBox();
             this.txttc = new System.Windows.Forms.TextBox();
             this.btnDelete = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
@@ -55,6 +57,7 @@
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(253, 313);
             this.dataGridView1.TabIndex = 0;
+            this.dataGridView1.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.dataGridView1_MouseDoubleClick);
             // 
             // btnIptal
             // 
@@ -64,6 +67,7 @@
             this.btnIptal.TabIndex = 23;
             this.btnIptal.Text = "İPTAL";
             this.btnIptal.UseVisualStyleBackColor = true;
+            this.btnIptal.Click += new System.EventHandler(this.btnIptal_Click);
             // 
             // btnUpdate
             // 
@@ -73,6 +77,7 @@
             this.btnUpdate.TabIndex = 22;
             this.btnUpdate.Text = "GÜNCELLE";
             this.btnUpdate.UseVisualStyleBackColor = true;
+            this.btnUpdate.Click += new System.EventHandler(this.btnUpdate_Click);
             // 
             // label5
             // 
@@ -164,12 +169,32 @@
             this.btnDelete.UseVisualStyleBackColor = true;
             this.btnDelete.Click += new System.EventHandler(this.button1_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(333, 9);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(79, 16);
+            this.label6.TabIndex = 26;
+            this.label6.Text = "TC ARAMA ";
+            this.label6.Click += new System.EventHandler(this.label6_Click);
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(433, 6);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(119, 22);
+            this.textBox1.TabIndex = 25;
+            this.textBox1.TextChanged += new System.EventHandler(this.textBox1_TextChanged);
+            // 
             // frmMüsteriListeleme
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.btnDelete);
             this.Controls.Add(this.btnIptal);
             this.Controls.Add(this.btnUpdate);
@@ -210,5 +235,7 @@
         private System.Windows.Forms.MaskedTextBox txtAdsoyad;
         private System.Windows.Forms.TextBox txttc;
         private System.Windows.Forms.Button btnDelete;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox1;
     }
 }

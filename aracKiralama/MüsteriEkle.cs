@@ -32,7 +32,7 @@ namespace aracKiralama
 
         private void button1_Click(object sender, EventArgs e)
         {
-            string cümle = "insert into müsteri(tc,adsoyad,telefon,adres,email) values(@tc,@adsoyad,@telefon,@adres,@email)";
+            string cümle = "insert into musteri(tc,adsoyad,telefon,adres,email) values(@tc,@adsoyad,@telefon,@adres,@email)";
 
             SqlCommand komut2 = new SqlCommand();
 
